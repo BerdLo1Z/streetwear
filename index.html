@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streetwear | Y2K Skater & Grunge Drop</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800;900&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background textures -->
+    <div class="grunge-overlay"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                STREET<span class="highlight">WEAR</span>
+                <span class="est-tag">EST. 2000</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#hero" class="nav-link">INICIO</a>
+                <a href="#shop" class="nav-link">COLECCIÓN</a>
+                <a href="#lookbook" class="nav-link">LOOKBOOK</a>
+                <a href="#contacto" class="nav-link">CONTACTO</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-btn" id="cart-toggle" aria-label="Ver carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-badge">DROP 001 // DISPONIBLE AHORA</div>
+            <h1 class="hero-title">
+                <span class="text-stroke">RAW &</span> UNTAMED
+            </h1>
+            <p class="hero-subtitle">Estética urbana directa de los 2000. Grunge, skate y cultura callejera pura en piezas limitadas de alta calidad.</p>
+            <div class="hero-actions">
+                <a href="#shop" class="btn btn-primary">COMPRAR AHORA</a>
+                <a href="#lookbook" class="btn btn-secondary">LOOKBOOK</a>
+            </div>
+            
+            <div class="hero-image-wrapper">
+                <img src="assets/hero.png" alt="Y2K Skater Campaign" class="hero-image">
+                <div class="tape tape-top-left"></div>
+                <div class="tape tape-bottom-right"></div>
+                <span class="photo-caption">// S-W_CAMPAIGN_001.JPG</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Bar / Ticker -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker__item">★ FREE SHIPPING WORLDWIDE FOR ORDERS OVER $150 ★</div>
+            <div class="ticker__item">★ NEW Y2K SKATER DROP OUT NOW ★</div>
+            <div class="ticker__item">★ LIMITED STOCK // NO RESTOCKS ★</div>
+            <div class="ticker__item">★ STREETWEAR CO. EST. 2000 ★</div>
+            <div class="ticker__item">★ FREE SHIPPING WORLDWIDE FOR ORDERS OVER $150 ★</div>
+            <div class="ticker__item">★ NEW Y2K SKATER DROP OUT NOW ★</div>
+        </div>
+    </div>
+
+    <!-- Shop / Collection Section -->
+    <section id="shop" class="shop-section">
+        <div class="section-header">
+            <div class="section-title-wrap">
+                <span class="section-number">01 /</span>
+                <h2 class="section-title">EL CATÁLOGO</h2>
+            </div>
+            <p class="section-desc">Cortes anchos, algodones pesados y lavados retro desgastados.</p>
+            
+            <!-- Filters -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">TODOS</button>
+                <button class="filter-btn" data-category="tops">TOPS</button>
+                <button class="filter-btn" data-category="bottoms">BOTTOMS</button>
+                <button class="filter-btn" data-category="accessories">ACCESORIOS</button>
+            </div>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+            <!-- Products will be generated dynamically by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Lookbook Section -->
+    <section id="lookbook" class="lookbook-section">
+        <div class="lookbook-bg-text">STREETWEAR</div>
+        <div class="section-header">
+            <div class="section-title-wrap">
+                <span class="section-number">02 /</span>
+                <h2 class="section-title">LOOKBOOK 2000s</h2>
+            </div>
+            <p class="section-desc">Capturando la cultura skate urbana y la crudeza del grunge analógico.</p>
+        </div>
+
+        <div class="lookbook-grid">
+            <div class="lookbook-item item-large">
+                <img src="assets/lookbook_skater.png" alt="Skater Lookbook 1">
+                <div class="item-overlay">
+                    <span class="item-tag">SKATE OR DIE</span>
+                    <span class="item-loc">SAN FRANCISCO, CA // 05.24.2001</span>
+                </div>
+            </div>
+            <div class="lookbook-item item-small">
+                <img src="assets/hoodie.png" alt="Skater Lookbook 2">
+                <div class="item-overlay">
+                    <span class="item-tag">OVERSIZED VIBES</span>
+                    <span class="item-loc">DETROIT, MI // 11.14.2000</span>
+                </div>
+            </div>
+            <div class="lookbook-item item-medium">
+                <img src="assets/jeans.png" alt="Skater Lookbook 3">
+                <div class="item-overlay">
+                    <span class="item-tag">BAGGY STYLE</span>
+                    <span class="item-loc">TOKYO, JP // 08.09.2002</span>
+                </div>
+            </div>
+            <div class="lookbook-item item-text">
+                <div class="tape-tag">STREETWEAR CO.</div>
+                <h3>SÉ REBELDE, SÉ LIBRE</h3>
+                <p>Nuestra colección se inspira en el auge del skate y la música grunge alternativa que definió el inicio del milenio. Telas pesadas, parches ásperos y costuras reforzadas diseñadas para soportar la calle.</p>
+                <div class="stamp-icon"><i class="fa-solid fa-stamp"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-card">
+            <div class="tape tape-top-right"></div>
+            <div class="contact-header">
+                <h2>ÚNETE AL CLAN</h2>
+                <p>Regístrate para recibir notificaciones sobre próximos "Drops" exclusivos, preventas y 15% de descuento en tu primera compra.</p>
+            </div>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">TU NOMBRE // ALIAS</label>
+                    <input type="text" id="name" required placeholder="ej. SkateKid00">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-MAIL // CORREO</label>
+                    <input type="email" id="email" required placeholder="ej. user@vintage.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">MENSAJE // COMENTARIO (OPCIONAL)</label>
+                    <textarea id="message" rows="3" placeholder="¿Qué prenda te gustaría ver en el próximo drop?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    REGISTRAR ALIAS <i class="fa-solid fa-skull"></i>
+                </button>
+            </form>
+            <div id="form-success" class="form-success-msg hidden">
+                <h3>★ REGISTRO EXITOSO ★</h3>
+                <p>Tu alias ha sido añadido a la lista secreta. Revisa tu inbox para tu código de 15% de descuento: <strong>Y2KSLIDER</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Drawer -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-drawer-overlay" id="cart-overlay"></div>
+        <div class="cart-drawer-content">
+            <div class="cart-header">
+                <h3>TU BOLSA (<span id="cart-drawer-count">0</span>)</h3>
+                <button class="close-cart" id="cart-close" aria-label="Cerrar bolsa">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <div class="cart-items" id="cart-items-container">
+                <!-- Cart items will be loaded dynamically by JavaScript -->
+            </div>
+            
+            <div class="cart-footer">
+                <div class="cart-summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="cart-summary-row text-highlight">
+                    <span>Envío</span>
+                    <span id="cart-shipping">GRATIS</span>
+                </div>
+                <div class="cart-summary-row total-row">
+                    <span>Total Estimado</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <button class="btn btn-primary btn-block checkout-btn" id="checkout-btn">
+                    PROCEDER AL PAGO <i class="fa-solid fa-credit-card"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="close-modal" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body" id="modal-body">
+                <!-- Loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal Success -->
+    <div class="modal" id="checkout-success-modal">
+        <div class="modal-overlay" id="checkout-overlay"></div>
+        <div class="modal-content checkout-success-content">
+            <div class="tape-header">ORDEN CONFIRMADA</div>
+            <i class="fa-solid fa-circle-check success-icon"></i>
+            <h2>¡TU PEDIDO VA EN CAMINO!</h2>
+            <p>Hemos procesado tu compra con éxito. Pronto recibirás un correo de confirmación con tu guía de rastreo. ¡Gracias por confiar en Streetwear!</p>
+            <button class="btn btn-primary" id="success-close-btn">SEGUIR COMPRANDO</button>
+        </div>
+    </div>
+
+    <!-- Sticky Notification Toast -->
+    <div class="toast" id="toast">
+        <span id="toast-message">Producto añadido al carrito</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>STREETWEAR CO.</h3>
+                <p>Moda urbana, grunge e inspiración skater de los años 2000.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-grid">
+                <div>
+                    <h4>AYUDA</h4>
+                    <ul>
+                        <li><a href="#">Soporte</a></li>
+                        <li><a href="#">Envíos y Retornos</a></li>
+                        <li><a href="#">Tabla de Tallas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>LEGAL</h4>
+                    <ul>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Streetwear Co. Todos los derechos reservados. Diseñado para la calle.</p>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="app.js"></script>
+</body>
+</html>
