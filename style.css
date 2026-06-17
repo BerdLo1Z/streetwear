@@ -1490,6 +1490,111 @@ a {
     transition: width 1s ease-in-out;
 }
 
+/* Founders Crew Section Styling */
+.crew-section {
+    padding: 6rem 0;
+    border-bottom: 3px solid var(--cream);
+    background-color: var(--card-dark);
+}
+
+.crew-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.crew-card-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.crew-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.crew-title {
+    font-size: 3.5rem;
+    margin-top: 15px;
+    margin-bottom: 1.5rem;
+    color: var(--cream);
+}
+
+.crew-desc {
+    font-size: 1.15rem;
+    color: var(--cream-dim);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.founders-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.founder-badge {
+    border: 2px solid var(--cream);
+    padding: 8px 18px;
+    font-family: var(--font-heading);
+    color: var(--cream);
+    font-size: 1.05rem;
+    background-color: var(--brown);
+    box-shadow: 4px 4px 0px var(--bg-dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition-fast);
+}
+
+.founder-badge:hover {
+    background-color: var(--olive);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--bg-dark);
+}
+
+.crew-photo-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.polaroid-frame {
+    background-color: var(--cream);
+    padding: 15px 15px 35px 15px;
+    border: 3px solid var(--bg-dark);
+    box-shadow: 10px 10px 0px var(--olive);
+    transform: rotate(-1.5deg);
+    max-width: 420px;
+    width: 100%;
+    position: relative;
+    transition: var(--transition-smooth);
+}
+
+.polaroid-frame:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 12px 12px 0px var(--burnt-orange);
+}
+
+.crew-photo {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--bg-dark);
+    filter: sepia(0.12) contrast(1.08) brightness(0.95);
+    display: block;
+}
+
+.polaroid-caption {
+    font-family: var(--font-accent);
+    color: var(--bg-dark);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
 /* Media Queries (Responsive Design) */
 @media (max-width: 992px) {
     .hero-title {
@@ -1521,6 +1626,17 @@ a {
     .math-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    .crew-card-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    .crew-photo-wrap {
+        order: -1;
+    }
+    .founders-list {
+        justify-content: center;
     }
 }
 
