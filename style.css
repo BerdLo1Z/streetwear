@@ -1283,6 +1283,213 @@ a {
     color: var(--cream-dim);
 }
 
+/* Development Section Styling */
+.development-section {
+    padding: 6rem 0;
+    border-bottom: 3px solid var(--cream);
+    background-color: var(--bg-dark);
+}
+
+.development-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.dev-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.dev-card {
+    background-color: var(--card-dark);
+    border: 3px solid var(--cream);
+    padding: 2.5rem;
+    box-shadow: var(--brutalist-shadow);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-full {
+    grid-column: span 2;
+}
+
+.card-medium {
+    grid-column: span 1;
+}
+
+.conclusions-card {
+    background-color: var(--brown);
+    box-shadow: 6px 6px 0px var(--olive);
+}
+
+.dev-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px dashed var(--border-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.dev-card-header h3 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.icon-accent {
+    font-size: 2rem;
+    color: var(--burnt-orange);
+}
+
+.conclusions-card .icon-accent {
+    color: var(--neon-green);
+}
+
+.pop-sample-item .sub-label {
+    display: block;
+    font-family: var(--font-accent);
+    font-size: 0.8rem;
+    color: var(--olive-light);
+    margin-bottom: 5px;
+}
+
+.survey-intro {
+    font-size: 1rem;
+    color: var(--cream-dim);
+    margin-bottom: 15px;
+}
+
+.survey-list {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.survey-list li {
+    font-size: 0.95rem;
+}
+
+.survey-list strong {
+    color: var(--burnt-orange);
+}
+
+/* Retro Table */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.retro-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+}
+
+.retro-table th, 
+.retro-table td {
+    border: 2px solid var(--cream);
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.retro-table th {
+    background-color: var(--olive);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--cream);
+    letter-spacing: 0.5px;
+}
+
+.retro-table tr:nth-child(even) {
+    background-color: rgba(245, 245, 220, 0.03);
+}
+
+.table-total-row {
+    font-weight: 800;
+    background-color: rgba(204, 85, 0, 0.1);
+}
+
+.table-total-row td {
+    border-top: 3px double var(--cream);
+    color: var(--burnt-orange);
+}
+
+/* Measures of Central Tendency */
+.math-intro {
+    font-size: 1rem;
+    color: var(--cream-dim);
+    margin-bottom: 1.5rem;
+}
+
+.math-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.math-item {
+    background-color: var(--bg-dark);
+    border: 2px solid var(--cream);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+}
+
+.math-val {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--burnt-orange);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.math-label {
+    font-family: var(--font-accent);
+    font-size: 0.7rem;
+    color: var(--cream-dim);
+    text-transform: uppercase;
+}
+
+/* Retro Charts */
+.retro-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.chart-bar-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar-name {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.bar-container {
+    background-color: var(--bg-dark);
+    border: 2px solid var(--cream);
+    height: 25px;
+    width: 100%;
+}
+
+.bar-fill {
+    height: 100%;
+    transition: width 1s ease-in-out;
+}
+
 /* Media Queries (Responsive Design) */
 @media (max-width: 992px) {
     .hero-title {
@@ -1304,6 +1511,16 @@ a {
     }
     .footer-info {
         grid-column: span 2;
+    }
+    .dev-grid {
+        grid-template-columns: 1fr;
+    }
+    .card-full, .card-medium {
+        grid-column: span 12;
+    }
+    .math-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
 
